@@ -23,4 +23,4 @@ Allow: /
 User-agent: Applebot
 Allow: /
 
-Sitemap: https://doc2contact.vercel.app/sitemap.xml
+Sitemap: https://sonejisagar.github.io/doc2contact-website/sitemap.xml
