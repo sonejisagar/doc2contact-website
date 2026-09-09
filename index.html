@@ -7,11 +7,14 @@
 <meta name="description" content="Scan documents, business cards, and handwritten lists to extract contacts instantly. Upload PDF, Excel, or Word files. Free contact scanner app for Android.">
 <meta name="keywords" content="contact scanner, business card scanner, document to contact, scan contacts, extract phone numbers, contact extractor app">
 
+<link rel="icon" type="image/png" href="assets/logo.png">
+
 <!-- Open Graph for social sharing -->
 <meta property="og:title" content="Doc2Contact - Contact Scanner & Document to Contact Converter">
 <meta property="og:description" content="Turn documents, photos, business cards, and contact lists into phone contacts in seconds.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://doc2contact.vercel.app">
+<meta property="og:image" content="assets/logo.png">
+<meta property="og:url" content="https://sonejisagar.github.io/doc2contact-website/">
 
 <!-- Schema.org structured data for AI/search discoverability -->
 <script type="application/ld+json">
@@ -182,12 +185,83 @@
 
   footer { text-align: center; padding: 32px; font-size: 13px; color: #999; }
   footer a { color: #4338CA; text-decoration: none; }
+
+  /* App Logo & Screenshots Showcase */
+  .app-logo {
+    width: 96px;
+    height: 96px;
+    border-radius: 22px;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.28);
+    margin-bottom: 20px;
+    object-fit: contain;
+    background: white;
+    padding: 6px;
+    display: inline-block;
+  }
+
+  .screenshots-section {
+    background: #FFFFFF;
+    padding: 64px 0 72px;
+    overflow: hidden;
+  }
+  .screenshots-slider {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 24px 8px 32px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    scrollbar-color: #F59E0B #E2E8F0;
+  }
+  .screenshots-slider::-webkit-scrollbar {
+    height: 8px;
+  }
+  .screenshots-slider::-webkit-scrollbar-track {
+    background: #E2E8F0;
+    border-radius: 4px;
+  }
+  .screenshots-slider::-webkit-scrollbar-thumb {
+    background: #F59E0B;
+    border-radius: 4px;
+  }
+  .screenshot-card {
+    flex: 0 0 240px;
+    scroll-snap-align: center;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    border: 3px solid #F1F5F9;
+    background: #000;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+  .screenshot-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 36px rgba(67, 56, 202, 0.22);
+  }
+  .screenshot-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .screenshot-caption {
+    background: white;
+    padding: 10px 12px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+    color: #4338CA;
+    border-top: 1px solid #F1F5F9;
+  }
 </style>
 </head>
 <body>
 
 <header>
   <div class="container">
+    <div>
+      <img src="assets/logo.png" alt="Doc2Contact Logo" class="app-logo">
+    </div>
     <h1>Doc2Contact</h1>
     <p class="tagline">Scan documents, extract contacts & save them instantly.</p>
     <a href="https://play.google.com/store/apps/details?id=com.sagarsoneji.doc2contact" class="cta-button">
@@ -206,6 +280,37 @@
       review and save the contacts directly to your phone. No need to type every contact
       manually.
     </p>
+  </div>
+</section>
+
+<!-- App Screenshots Showcase -->
+<section class="screenshots-section">
+  <div class="container">
+    <h2>App Preview & Screenshots</h2>
+    <p class="intro-text">See how simple and fast contact scanning is with Doc2Contact.</p>
+    
+    <div class="screenshots-slider">
+      <div class="screenshot-card">
+        <img src="assets/screenshots/2.png" alt="Doc2Contact - Home Screen & Scan" loading="lazy">
+        <div class="screenshot-caption">Home Screen & Scanner</div>
+      </div>
+      <div class="screenshot-card">
+        <img src="assets/screenshots/3.png" alt="Doc2Contact - AI Extraction & Review" loading="lazy">
+        <div class="screenshot-caption">AI Extraction & Review</div>
+      </div>
+      <div class="screenshot-card">
+        <img src="assets/screenshots/4.png" alt="Doc2Contact - Batch Contact Edit" loading="lazy">
+        <div class="screenshot-caption">Edit & Verify Numbers</div>
+      </div>
+      <div class="screenshot-card">
+        <img src="assets/screenshots/5.png" alt="Doc2Contact - Direct WhatsApp & Contact Save" loading="lazy">
+        <div class="screenshot-caption">Save & Multi-Export</div>
+      </div>
+      <div class="screenshot-card">
+        <img src="assets/screenshots/6.png" alt="Doc2Contact - PDF & VCF Export" loading="lazy">
+        <div class="screenshot-caption">PDF & Contact Export</div>
+      </div>
+    </div>
   </div>
 </section>
 
